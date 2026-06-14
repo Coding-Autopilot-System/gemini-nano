@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+.env

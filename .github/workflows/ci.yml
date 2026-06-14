@@ -62,11 +62,4 @@ jobs:
         run: npm ci --ignore-scripts
 
       - name: Run health test
-        # TEST-01: npm test must exist before this step passes end-to-end.
-        # Until Phase 2 adds the test script, this step will warn but not fail CI.
-        run: |
-          if node -e "const p=require('./package.json'); process.exit(p.scripts && p.scripts.test ? 0 : 1)"; then
-            npm test
-          else
-            echo "::warning::chrome-bridge has no 'test' script yet — add one in Phase 2 (TEST-01)"
-          fi
+        run: npm test
