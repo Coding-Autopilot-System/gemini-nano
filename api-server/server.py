@@ -7,12 +7,11 @@ Other projects call this exactly like the OpenAI API:
   GET  http://localhost:9000/v1/models
 """
 
-import asyncio
 import json
 from typing import AsyncIterator
 
 import httpx
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, StreamingResponse
 from pydantic import BaseModel

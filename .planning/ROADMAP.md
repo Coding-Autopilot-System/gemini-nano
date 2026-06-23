@@ -6,9 +6,9 @@
 
 ## Phases
 
-- [ ] **Phase 1: CI Setup** - GitHub Actions workflow lints and validates the project on every push
-- [ ] **Phase 2: Component Completion** - chrome-bridge gets a real health test; python-mediapipe gets graceful fallback and CLI argument
-- [ ] **Phase 3: Unified README** - Single README documents the architecture and quick-start for all components
+- [x] **Phase 1: CI Setup** - GitHub Actions workflow lints and validates the project on every push
+- [x] **Phase 2: Component Completion** - chrome-bridge gets a real health test; python-mediapipe gets graceful fallback and CLI argument
+- [x] **Phase 3: Unified README** - Single README documents the architecture and quick-start for all components
 
 ## Phase Details
 
