@@ -58,7 +58,7 @@ jobs:
           pip install -r requirements.txt
           pip install pytest ruff
           ruff check .
-          python -m pytest test_api.py --collect-only -q || true
+          python -m pytest test_api.py --collect-only -q
 
       - name: Validate chrome-bridge
         working-directory: chrome-bridge
@@ -81,11 +81,14 @@ jobs:
             site \
             api-server/server.py \
             api-server/requirements.txt \
+            api-server/start.ps1 \
             chrome-bridge/server.js \
             chrome-bridge/package.json \
             chrome-bridge/package-lock.json \
+            chrome-bridge/start.ps1 \
             chrome-demo/index.html \
-            python-mediapipe/requirements.txt
+            python-mediapipe/requirements.txt \
+            python-mediapipe/run_nano.py
           sha256sum "gemini-nano-demo-bundle-${GITHUB_SHA}.tar.gz" | tee "gemini-nano-demo-bundle-${GITHUB_SHA}.sha256"
 
       - name: Attest Gemini Nano demo bundle
