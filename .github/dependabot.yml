@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      all:
+        patterns:
+          - "*"
+  - package-ecosystem: "npm"
+    directory: "/chrome-bridge"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/api-server"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/python-mediapipe"
+    schedule:
+      interval: "weekly"
