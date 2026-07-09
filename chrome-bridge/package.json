@@ -9,7 +9,7 @@
     "install-deps": "npm install"
   },
   "dependencies": {
-    "express": "^4.19.2",
+    "express": "^5.2.1",
     "puppeteer-core": "^25.3.0"
   }
 }
