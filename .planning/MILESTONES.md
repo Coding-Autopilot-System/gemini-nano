@@ -9,8 +9,8 @@
 
 | Phase | Name | Requirements | Status |
 |---|---|---|---|
-| 1 | CI Setup | CI-01 | Not started |
-| 2 | Component Completion | NANO-01, NANO-02, TEST-01 | Not started |
-| 3 | Unified README | DOC-01 | Not started |
+| 1 | CI Setup | CI-01 | Complete |
+| 2 | Component Completion | NANO-01, NANO-02, TEST-01 | Complete |
+| 3 | Unified README | DOC-01 | Complete |
 
 **Definition of done:** All 5 requirements complete, CI green, README published.
