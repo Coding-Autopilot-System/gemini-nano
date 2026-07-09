@@ -36,15 +36,12 @@ jobs:
       - name: Lint (ruff)
         run: ruff check .
 
-      - name: Collect tests (no Ollama required)
-        # test_api.py is an integration smoke test that requires a live Ollama server.
-        # We collect-only to confirm the file is importable and has no syntax errors.
-        # Set SKIP_INTEGRATION=1 as a convention for future test guards.
+      - name: Run unit tests (no Ollama required)
         env:
           SKIP_INTEGRATION: "1"
         run: |
           pip install pytest
-          python -m pytest test_api.py --collect-only -q || true
+          python -m pytest test_server.py -q
 
   chrome-bridge:
     name: chrome-bridge (Node.js)
