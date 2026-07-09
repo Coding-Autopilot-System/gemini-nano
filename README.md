@@ -2,6 +2,9 @@
 
 Experimental Gemini Nano on-device inference demos across browser, Python, and HTTP surfaces.
 
+Public documentation is published from `docs/` via `mkdocs.yml` and
+`.github/workflows/pages.yml`.
+
 ## Components
 
 | Directory | Language | Port | Status |

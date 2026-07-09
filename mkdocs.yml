@@ -1,0 +1,21 @@
+site_name: Gemini Nano
+site_description: Experimental on-device Gemini Nano demos across browser, Python, and HTTP surfaces.
+site_url: https://coding-autopilot-system.github.io/gemini-nano/
+repo_url: https://github.com/Coding-Autopilot-System/gemini-nano
+repo_name: Coding-Autopilot-System/gemini-nano
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+nav:
+  - Home: index.md
+  - Setup: setup.md

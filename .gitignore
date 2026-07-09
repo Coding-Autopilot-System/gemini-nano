@@ -2,10 +2,12 @@ node_modules/
 __pycache__/
 *.py[cod]
 .venv/
+.tmp-docs-venv/
 dist/
 *.egg-info/
 .coverage
 htmlcov/
+site/
 .env
 .refiner/
 **/.refiner/
