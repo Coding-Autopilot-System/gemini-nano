@@ -17,6 +17,18 @@ on:
       - "chrome-bridge/**"
       - "chrome-demo/**"
       - "python-mediapipe/**"
+  pull_request:
+    paths:
+      - ".github/workflows/provenance.yml"
+      - ".github/workflows/ci.yml"
+      - "README.md"
+      - "SETUP.md"
+      - "mkdocs.yml"
+      - "docs/**"
+      - "api-server/**"
+      - "chrome-bridge/**"
+      - "chrome-demo/**"
+      - "python-mediapipe/**"
 
 permissions:
   contents: read
