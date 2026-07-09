@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
-      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
           cache: pip
@@ -36,15 +36,12 @@ jobs:
       - name: Lint (ruff)
         run: ruff check .
 
-      - name: Collect tests (no Ollama required)
-        # test_api.py is an integration smoke test that requires a live Ollama server.
-        # We collect-only to confirm the file is importable and has no syntax errors.
-        # Set SKIP_INTEGRATION=1 as a convention for future test guards.
+      - name: Run unit tests (no Ollama required)
         env:
           SKIP_INTEGRATION: "1"
         run: |
           pip install pytest
-          python -m pytest test_api.py --collect-only -q || true
+          python -m pytest test_server.py -q
 
   chrome-bridge:
     name: chrome-bridge (Node.js)
@@ -57,7 +54,7 @@ jobs:
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
           node-version: "22"
           cache: npm

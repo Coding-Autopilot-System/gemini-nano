@@ -1,4 +1,4 @@
-"""Quick test — calls both models and prints responses."""
+"""Manual integration smoke script for a live local LLM API server."""
 import httpx
 
 BASE = "http://localhost:9000"
