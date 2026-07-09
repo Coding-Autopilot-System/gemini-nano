@@ -105,7 +105,7 @@ jobs:
 
       - name: Attest Gemini Nano demo bundle
         id: attest
-        uses: actions/attest@f6bf1532d7d6793fce74eac584813a8eee607999 # v4
+        uses: actions/attest@a1948c3f048ba23858d222213b7c278aabede763 # v4
         with:
           subject-path: "gemini-nano-demo-bundle-${{ github.sha }}.tar.gz"
 
