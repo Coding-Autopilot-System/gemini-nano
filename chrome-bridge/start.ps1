@@ -1,4 +1,4 @@
-# Start the Chrome Gemini Nano bridge (port 8081)
+﻿# Start the Chrome Gemini Nano bridge (port 8081)
 # Requires Chrome Dev or Canary with flags enabled — see SETUP.md
 
 if (-not (Test-Path ".\node_modules")) {
