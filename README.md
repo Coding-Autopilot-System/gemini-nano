@@ -1,5 +1,8 @@
 # gemini-nano
 
+![Visual Diagram](docs/assets/concept.png)
+
+
 Experimental Gemini Nano on-device inference demos across browser, Python, and HTTP surfaces.
 
 Public documentation is published from `docs/` via `mkdocs.yml` and
@@ -37,6 +40,9 @@ python -m venv .venv && .venv\Scripts\activate    # Windows
 pip install -r requirements.txt
 python server.py
 # → http://localhost:8080
+
+![Visual Diagram](docs/assets/concept.png)
+
 ```
 
 ### chrome-bridge (Node.js)
@@ -46,6 +52,9 @@ cd chrome-bridge
 npm install
 npm start
 # → http://localhost:8081
+
+![Visual Diagram](docs/assets/concept.png)
+
 ```
 
 Test without Chrome:
@@ -61,6 +70,9 @@ cd python-mediapipe
 pip install -r requirements.txt
 python run_nano.py "What is Gemini Nano?"
 # Prints download instructions if model.task is absent (exits 0)
+
+![Visual Diagram](docs/assets/concept.png)
+
 python run_nano.py --model-path /path/to/gemma2b-it.task "Your prompt"
 ```
 
